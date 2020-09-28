@@ -1,4 +1,8 @@
-<a href="#" class="list-group-item clearfix" style="text-decoration: none; color: black;" (click)="onSelected()">
+<a
+    [routerLink]="[index]"
+    routerLinkActive="active"
+    class="list-group-item clearfix"
+    style="text-decoration: none; color: black; cursor: pointer;">
     <div class="card" style="width: 12rem;">
         <img src="{{ recipe.imagePath }}" class="card-img-top" alt="{{ recipe.name }}">
         <div class="card-body">

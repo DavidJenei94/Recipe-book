@@ -6,11 +6,11 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" (click)="onSelect('recipe')">Recipes <span class="sr-only">(current)</span></a>
+            <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link" routerLink="/recipes">Recipes <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
+            <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link" routerLink="/shopping-list">Shopping List</a>
             </li>
         </ul>
         <div class="dropdown">
@@ -18,8 +18,8 @@
                 Manage
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Save data</a>
-                <a class="dropdown-item" href="#">Fetch data</a>
+                <a class="dropdown-item" style="cursor: pointer">Save data</a>
+                <a class="dropdown-item" style="cursor: pointer">Fetch data</a>
             </div>
         </div>
     </div>
